@@ -7,7 +7,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+const allowedOrigin = https://moodboard-lite-6hhn.vercel.app/';  
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true, // Necessary if using cookies or auth headers
+}));
 app.use(express.json());
 
 // MongoDB Connection
