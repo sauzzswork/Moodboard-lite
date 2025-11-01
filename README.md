@@ -2,6 +2,9 @@
 
 Moodboard Lite is a dynamic journaling React app that helps users capture their daily mood using emojis, GIFs, notes, and customizable colors. It features an intuitive, responsive UI with smooth animations and efficient state management.
 
+##App is live at 
+- https://moodboard-lite-37mv.vercel.app/
+
 ---
 
 ## ✨ Features
