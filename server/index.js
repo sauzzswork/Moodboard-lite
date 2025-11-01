@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-const allowedOrigin = 'https://moodboard-lite-6hhn.vercel.app';  
+const allowedOrigin = 'https://moodboard-lite-37mv.vercel.app';
 app.use(cors({
   origin: allowedOrigin,
   credentials: true, // Necessary if using cookies or auth headers
