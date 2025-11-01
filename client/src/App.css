@@ -1,0 +1,227 @@
+body {
+  background: linear-gradient(135deg, #fdd8fc 0%, #c0e7fa 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.main-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.login-card {
+  background: #ffffffcc;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 32px 0 #82b1ff33;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #383989;
+}
+
+.login-card label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #383980cd;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b2bec3;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #f6f8ff;
+  transition: border 0.2s;
+}
+
+.login-card input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 0.8rem 2.2rem;
+  background: linear-gradient(90deg, #6c63ff 0%, #47e6e6 100%);
+  border: none;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.08rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #6c63ff44;
+  margin: 1rem 0;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+  background: linear-gradient(90deg, #48b1e6 10%, #6c63ff 90%);
+  box-shadow: 0 4px 22px #6c63ff44;
+}
+
+.login-card p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #383989cc;
+}
+
+.login-card a {
+  color: #6c63ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.login-card a:hover {
+  color: #383989;
+  text-decoration: underline;
+}
+.btn-delete {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1.4em;
+  border-radius: 0.4em;
+  font-weight: 600;
+  margin-left: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-delete:hover {
+  background: #ad1457;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.2em 2em;
+  background: #f6f7fa;
+}
+.user-info {
+  margin-left: auto;
+  font-weight: 600;
+  color: #4a36a6;
+}
+.btn-logout {
+  margin-left: 1.5em;
+}
+.navbar a {
+  font-size: 1.1em;
+  color: #4a36a6;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 1em;
+  transition: color 0.15s;
+}
+.navbar a:hover {
+  color: #6c63ff;
+}
+body.dark-theme {
+  background: linear-gradient(135deg, #191b2a 0%, #2a3460 100%);
+  color: #f7f7ff;
+}
+body.dark-theme .login-card,
+body.dark-theme .timeline-card,
+body.dark-theme .navbar {
+  background: #272d42 !important;
+  color: #f7f7ff;
+}
+body.dark-theme input,
+body.dark-theme textarea {
+  background: #202334;
+  color: #e0ddff;
+  border-color: #585085;
+}
+body.dark-theme .btn-primary {
+  background: linear-gradient(90deg,#7367f7 0%, #4fdcdc 100%);
+}
+body.dark-theme .btn-primary:hover {
+  background: linear-gradient(90deg,#5b5adc 40%, #6cffe3 90%);
+}
+@media (max-width: 700px) {
+  .login-card, .timeline-card {
+    max-width: 95vw !important;
+    padding: 1em !important;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 0.8em 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-card, .timeline-card {
+    font-size: 0.93em;
+  }
+  .btn-primary {
+    font-size: 1em;
+    padding: 0.65em 1.1em;
+  }
+}
+.btn-delete {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1.4em;
+  border-radius: 0.4em;
+  font-weight: 600;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-delete:hover {
+  background: #ad1457;
+}
+.timeline-month-group {
+  margin-bottom: 2rem;
+  border-left: 3px solid #90caf9;
+  padding-left: 1rem;
+}
+
+.timeline-month-group h3 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+.timeline-card {
+  background: #f5f5f5;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.timeline-card img {
+  max-width: 200px;
+  display: block;
+  margin: 0.5rem 0;
+}
+button,
+.btn-primary,
+.btn-secondary,
+.btn-delete {
+  transition: transform 0.18s cubic-bezier(.4,2,.5,1);
+}
+
+button:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-delete:hover {
+  transform: scale(1.11);
+}
